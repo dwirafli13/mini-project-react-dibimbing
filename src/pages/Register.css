@@ -1,0 +1,44 @@
+@media (min-width: 576px) {
+    .content-style {
+      width: 90%;
+    }
+  }
+  @media (min-width: 768px) {
+    .content-style {
+      width: 50%;
+    }
+  }
+  @media (min-width: 992px) {
+    .content-style {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .content-style {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1400px) {
+    .content-style {
+      width: 50%;
+    }
+  }
+  .content-style {
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 16px;
+  }
+  .form-style {
+      margin-top: 16px;
+      margin-bottom: 16px;
+  }
+
+  .page-bg {
+    background-image: url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    height: 100vh;
+  }
