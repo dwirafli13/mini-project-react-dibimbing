@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ handleChanceSearch, getData }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -19,6 +19,9 @@ const Header = () => {
           <Link to={"/menus"}>
             <img src={logo} />
           </Link>
+          <div className="d-flex">
+            <input className="form-control me-2" onChange={handleChanceSearch} />
+          </div>
           <button onClick={handleLogout} className="btn btn-outline-danger">
             Logout
           </button>

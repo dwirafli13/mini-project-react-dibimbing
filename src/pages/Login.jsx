@@ -36,15 +36,15 @@ const Login = () => {
       });
   };
 
-  console.log("payload", username, password);
-
   return (
     <>
       <div className="page-bg">
         <div className="container-fluid content-style border">
           <h1>WELCOME BACK</h1>
           <p>please login first</p>
-          {!!errLogin.length && <p className="alert alert-danger">{errLogin}</p>}
+          {!!errLogin.length && (
+            <p className="alert alert-danger">{errLogin}</p>
+          )}
           <div className="form-style">
             <label className="form-label">Username</label>
             <input
