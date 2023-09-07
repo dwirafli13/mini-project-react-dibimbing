@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Register.css";
+import logo from "/logoipsum-295.svg";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -49,41 +50,42 @@ const Register = () => {
       });
   };
 
-  console.log("payload", name, username, password);
-
   return (
     <>
-      <div className="page-bg">
-        <div className="container-fluid content-style border">
+      <div className="d-flex align-items-center py-4 bg-body-tertiary page-bg">
+        <div className="container content-style">
+          <img className="mb-4" src={logo} alt="" width="72" height="57" />
           <h1>REGISTER</h1>
           <p>please fill in</p>
-          {!!errRegister.length && <p className="alert alert-danger">{errRegister}</p>}
-          <div className="form-style">
-            <label className="form-label">Name</label>
+          {!!errRegister.length && (
+            <p className="alert alert-danger">{errRegister}</p>
+          )}
+          <div className="form-floating">
             <input
               onChange={handleName}
               type="text"
               placeholder="Enter your name"
-              className="form-control"
+              className="form-control form-border-1"
             />
+            <label className="form-label">Name</label>
           </div>
-          <div className="form-style">
-            <label className="form-label">Username</label>
+          <div className="form-floating">
             <input
               onChange={handleUsername}
               type="text"
               placeholder="Enter your username"
-              className="form-control"
+              className="form-control form-border-3"
             />
+            <label className="form-label">Username</label>
           </div>
-          <div className="form-style">
-            <label className="form-label">Password</label>
+          <div className="form-floating">
             <input
               onChange={handlePass}
               type="password"
               placeholder="Enter your password"
-              className="form-control"
+              className="form-control form-border-2"
             />
+            <label className="form-label">Password</label>
           </div>
           {/* <div className="form-style">
             <label className="form-label">Role Id</label>
@@ -94,7 +96,10 @@ const Register = () => {
               className="form-control"
             />
           </div> */}
-          <button onClick={handleRegister} className="btn btn-primary">
+          <button
+            onClick={handleRegister}
+            className="btn btn-primary w-100 py-2 mt-3"
+          >
             Register
           </button>
           <p>

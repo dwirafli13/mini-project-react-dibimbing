@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import logo from "/logoipsum-295.svg";
 import "./Login.css";
 
 const Login = () => {
@@ -38,32 +39,36 @@ const Login = () => {
 
   return (
     <>
-      <div className="page-bg">
-        <div className="container-fluid content-style border">
+      <div className="d-flex align-items-center py-4 bg-body-tertiary page-bg">
+        <div className="container content-style">
+          <img className="mb-4" src={logo} alt="" width="72" height="57" />
           <h1>WELCOME BACK</h1>
           <p>please login first</p>
           {!!errLogin.length && (
             <p className="alert alert-danger">{errLogin}</p>
           )}
-          <div className="form-style">
-            <label className="form-label">Username</label>
+          <div className="form-floating">
             <input
               onChange={handleChangeUsername}
               type="text"
-              placeholder="Enter your username"
-              className="form-control"
+              placeholder="test123"
+              className="form-control form-border-1"
             />
+            <label className="form-label">Username</label>
           </div>
-          <div className="form-style">
-            <label className="form-label">Password</label>
+          <div className="form-floating">
             <input
               onChange={handleChangePass}
               type="password"
-              placeholder="********"
-              className="form-control"
+              placeholder="password"
+              className="form-control form-border-2"
             />
+            <label className="form-label">Password</label>
           </div>
-          <button onClick={handleLogin} className="btn btn-primary">
+          <button
+            onClick={handleLogin}
+            className="btn btn-primary w-100 py-2 mt-3"
+          >
             Sign In
           </button>
           <p>
