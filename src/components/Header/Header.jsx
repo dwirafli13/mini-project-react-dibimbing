@@ -16,13 +16,13 @@ const Header = ({ handleChanceSearch, getData }) => {
     <>
       <nav className="navbar navbar-expand-sm bg-body-tertiary">
         <div className="container-fluid">
-          <Link to={"/menus"}>
+          <Link to={"/menus"} className="navbar-brand fw-bold">
             <img
               src={logo}
-              className="navbar-brand"
               width={"50"}
               height={"50"}
             />
+            FoodFever
           </Link>
           <button
             className="navbar-toggler"
