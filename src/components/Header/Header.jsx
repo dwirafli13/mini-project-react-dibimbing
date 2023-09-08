@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "/reshot-icon-burger.svg";
 import { useNavigate } from "react-router";
-import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = ({ handleChanceSearch, getData }) => {
@@ -17,11 +16,7 @@ const Header = ({ handleChanceSearch, getData }) => {
       <nav className="navbar navbar-expand-sm bg-body-tertiary">
         <div className="container-fluid">
           <Link to={"/menus"} className="navbar-brand fw-bold">
-            <img
-              src={logo}
-              width={"50"}
-              height={"50"}
-            />
+            <img src={logo} width={"50"} height={"50"} />
             FoodFever
           </Link>
           <button

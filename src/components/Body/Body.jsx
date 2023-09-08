@@ -1,5 +1,4 @@
 import React from "react";
-import "./Body.css";
 
 const Body = ({
   menus,
@@ -19,7 +18,6 @@ const Body = ({
                 <div
                   key={key}
                   className="card shadow-sm"
-                  // style={{ width: "15rem" }}
                 >
                   <img
                     src={item.imageUrl}
