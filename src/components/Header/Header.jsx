@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/logoipsum-295.svg";
+import logo from "/reshot-icon-burger.svg";
 import { useNavigate } from "react-router";
 import "./Header.css";
 import { Link } from "react-router-dom";
@@ -17,7 +17,12 @@ const Header = ({ handleChanceSearch, getData }) => {
       <nav className="navbar navbar-expand-sm bg-body-tertiary">
         <div className="container-fluid">
           <Link to={"/menus"}>
-            <img src={logo} className="navbar-brand" />
+            <img
+              src={logo}
+              className="navbar-brand"
+              width={"50"}
+              height={"50"}
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -33,7 +38,11 @@ const Header = ({ handleChanceSearch, getData }) => {
           <div className="collapse navbar-collapse" id="navbarsExample03">
             <ul className="navbar-nav me-auto mb-2 mb-sm-0">
               <li className="nav-item">
-                <Link to={"/menus"} className="nav-link fw-bold" aria-current="page">
+                <Link
+                  to={"/menus"}
+                  className="nav-link fw-bold"
+                  aria-current="page"
+                >
                   Home
                 </Link>
               </li>

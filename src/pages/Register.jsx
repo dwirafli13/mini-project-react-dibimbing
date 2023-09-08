@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Register.css";
-import logo from "/logoipsum-295.svg";
+import logo from "/reshot-icon-burger.svg";
 
 const Register = () => {
   const [name, setName] = useState("");
