@@ -1,4 +1,6 @@
 import React from "react";
+import "./Body.css";
+import logo from "/reshot-icon-burger.svg";
 
 const Body = ({
   menus,
@@ -10,19 +12,29 @@ const Body = ({
 }) => {
   return (
     <>
-      <div className="album py-5 bg-body-tertiary">
+      <div className="mb-4 rounded-5 text-body-emphasis text-center background-header mx-2">
+        <div className="container px-0 text-position bg-body-tertiary p-2 bg-opacity-75 rounded-5 px-3 py-3 header-container">
+          <img src={logo} height={"100"} width={"100"} />
+          <h1 className="display-4 fw-bold">Hungry already?</h1>
+          <p className="lead mb-0">
+            <button className="btn btn-primary">
+              <a href="#goToMenu" className="text-body-emphasis fw-bold text-decoration-none text-white">
+                Let's make an order...
+              </a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div className="album py-5 bg-body-tertiary" id="goToMenu">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {menus.map((item, key) => (
               <div className="col">
-                <div
-                  key={key}
-                  className="card shadow-sm"
-                >
+                <div key={key} className="card shadow-sm rounded-4">
                   <img
                     src={item.imageUrl}
                     alt="food"
-                    className="bd-placeholder-img card-img-top"
+                    className="bd-placeholder-img card-img-top rounded-top-4"
                     width={"100%"}
                     height={"225"}
                   />
