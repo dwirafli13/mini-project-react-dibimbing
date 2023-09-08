@@ -15,13 +15,13 @@ const Body = ({
       <div className="mb-4 rounded-5 text-body-emphasis text-center background-header mx-2">
         <div className="container px-0 text-position bg-body-tertiary p-2 bg-opacity-75 rounded-5 px-3 py-3 header-container">
           <img src={logo} height={"100"} width={"100"} />
-          <h1 className="display-4 fw-bold">Hungry already?</h1>
-          <p className="lead my-3">Order your favorite meals here</p>
+          <h1 className="display-4">Hungry already?</h1>
+          <p className="lead my-3 fw-bold">Order your favorite meals here</p>
           <p className="lead mb-0">
             <button className="btn btn-primary">
               <a
                 href="#goToMenu"
-                className="text-body-emphasis fw-bold text-decoration-none text-white"
+                className="text-body-emphasis text-decoration-none text-white"
               >
                 Let's make an order...
               </a>

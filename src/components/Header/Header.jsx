@@ -13,7 +13,7 @@ const Header = ({ handleChanceSearch, getData }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-sm bg-body-tertiary">
+      <nav className="navbar navbar-expand-sm sticky-top bg-body-tertiary">
         <div className="container-fluid">
           <Link to={"/menus"} className="navbar-brand fw-bold">
             <img src={logo} width={"50"} height={"50"} />
