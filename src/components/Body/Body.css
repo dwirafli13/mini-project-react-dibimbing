@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
-  height: 100vh;
+  height: 80vh;
 }
 .header-container {
     width: fit-content;
@@ -20,16 +20,16 @@
 }
 @media (max-width: 992px) {
   .text-position {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 1200px) {
   .text-position {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 1400px) {
   .text-position {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }

@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import { useParams } from "react-router";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Footer from "../components/Footer/Footer";
 
 const DetailMenu = () => {
   const param = useParams();
@@ -39,6 +40,7 @@ const DetailMenu = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

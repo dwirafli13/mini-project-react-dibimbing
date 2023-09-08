@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router";
 import Header from "../components/Header/Header";
 import Body from "../components/Body/Body";
+import Footer from "../components/Footer/Footer";
 
 const Menus = () => {
   const [menus, setMenus] = useState([]);
@@ -70,6 +71,7 @@ const Menus = () => {
         setCurrentPage={setCurrentPage}
         nextPage={nextPage}
       />
+      <Footer/>
     </>
   );
 };

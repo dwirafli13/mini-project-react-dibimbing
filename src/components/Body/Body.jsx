@@ -12,7 +12,7 @@ const Body = ({
 }) => {
   return (
     <>
-      <div className="mb-4 rounded-5 text-body-emphasis text-center background-header mx-2">
+      <div className="mt-2 mb-4 rounded-5 text-body-emphasis text-center background-header mx-2">
         <div className="container px-0 text-position bg-body-tertiary p-2 bg-opacity-75 rounded-5 px-3 py-3 header-container">
           <img src={logo} height={"100"} width={"100"} />
           <h1 className="display-4">Hungry already?</h1>
