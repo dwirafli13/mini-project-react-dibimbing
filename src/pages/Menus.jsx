@@ -15,7 +15,7 @@ const Menus = () => {
   const getData = () => {
     axios
       .get(
-        `https://api.mudoapi.tech/menus?perPage=2&page=${currentPage}&name=${search}`
+        `https://api.mudoapi.tech/menus?perPage=6&page=${currentPage}&name=${search}`
       )
       .then((res) => {
         setMenus(res?.data?.data?.Data);

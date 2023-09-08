@@ -20,7 +20,7 @@ const Header = ({ handleChanceSearch, getData }) => {
             <img src={logo} />
           </Link>
           <div className="d-flex">
-            <input className="form-control me-2" onChange={handleChanceSearch} />
+            <input className="form-control me-2" placeholder="Search" onChange={handleChanceSearch} />
           </div>
           <button onClick={handleLogout} className="btn btn-outline-danger">
             Logout
