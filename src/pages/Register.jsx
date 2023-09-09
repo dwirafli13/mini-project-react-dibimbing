@@ -27,7 +27,9 @@ const Register = () => {
   };
 
   const handleRoleId = (e) => {
-    setRoleId(e.target.value);
+    const newValue = e.target.value
+
+    setRoleId(parseInt(newValue,10))
   };
 
   const handleRegister = () => {
@@ -35,7 +37,7 @@ const Register = () => {
       name: name,
       username: username,
       password: password,
-      roleId: 2,
+      roleId: roleId,
     };
     axios
       .post("https://api.mudoapi.tech/register", payload)
@@ -83,19 +85,19 @@ const Register = () => {
               onChange={handlePass}
               type="password"
               placeholder="Enter your password"
-              className="form-control"
+              className="form-control mb-2"
             />
             <label className="form-label">Password</label>
           </div>
-          {/* <div className="form-style">
-            <label className="form-label">Role Id</label>
-            <input
-              onChange={handleRoleId}
-              type="number"
-              placeholder="Enter your role id"
-              className="form-control"
-            />
-          </div> */}
+          <select
+            onChange={handleRoleId}
+            className="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Choose Your Role</option>
+            <option value="1">Owner</option>
+            <option value="2">Employee</option>
+          </select>
           <button
             onClick={handleRegister}
             className="btn btn-primary w-100 py-2 mt-3"
