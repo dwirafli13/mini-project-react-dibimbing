@@ -27,9 +27,9 @@ const Register = () => {
   };
 
   const handleRoleId = (e) => {
-    const newValue = e.target.value
+    const newValue = e.target.value;
 
-    setRoleId(parseInt(newValue,10))
+    setRoleId(parseInt(newValue, 10));
   };
 
   const handleRegister = () => {
