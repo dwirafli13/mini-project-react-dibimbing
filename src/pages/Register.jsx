@@ -42,7 +42,6 @@ const Register = () => {
     axios
       .post("https://api.mudoapi.tech/register", payload)
       .then((res) => {
-        // localStorage.setItem(res?.data);
         navigate("/");
         console.log(res);
       })
