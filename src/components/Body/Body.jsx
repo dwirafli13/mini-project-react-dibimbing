@@ -9,6 +9,9 @@ const Body = ({
   currentPage,
   setCurrentPage,
   nextPage,
+  handleChangeBeverage,
+  handleChangeMainDish,
+  handleChangeAllCateg,
 }) => {
   return (
     <>
@@ -29,8 +32,60 @@ const Body = ({
           </p>
         </div>
       </div>
+      <div className="text-center mb-3">
+        <h1>Order Here</h1>
+        <p>Chose your favorite food</p>
+      </div>
+      <div className="container d-flex justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-between justify-content-between">
+        <div>
+          <button
+            onClick={handleChangeAllCateg}
+            className="btn d-flex flex-column align-items-center button-category-style"
+          >
+            <img
+              src="reshot-icon-food.svg"
+              width={"100"}
+              height={"100"}
+              className="img-fluid"
+            />
+            All Category
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={handleChangeMainDish}
+            className="btn d-flex flex-column align-items-center button-category-style"
+          >
+            <img
+              src="reshot-icon-meat-dish.svg"
+              width={"100"}
+              height={"100"}
+              className="img-fluid"
+            />
+            Main Dish
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={handleChangeBeverage}
+            className="btn d-flex flex-column align-items-center button-category-style"
+          >
+            <img
+              src="reshot-icon-drink-with-ice.svg"
+              width={"100"}
+              height={"100"}
+              className="img-fluid"
+            />
+            Beverage
+          </button>
+        </div>
+      </div>
       <div className="album py-5 bg-body-tertiary" id="goToMenu">
         <div className="container">
+          <div className="text-center mb-3">
+            <h1>Order Here</h1>
+            <p>Chose your favorite food</p>
+          </div>
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {menus.map((item, key) => (
               <div className="col">
@@ -44,6 +99,7 @@ const Body = ({
                   />
                   <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
+                    <p className="card-text">Price : {item.priceFormatted}</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
                         <button
@@ -61,7 +117,6 @@ const Body = ({
                           Delete
                         </button>
                       </div>
-                      <p className="card-text">Price : {item.priceFormatted}</p>
                     </div>
                   </div>
                 </div>
@@ -94,8 +149,56 @@ const Body = ({
               </button>
             )}
           </div>
+          <div className="text-center mt-5">
+            <h1 className="mb-3">Why Food Fever?</h1>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div className="col">
+                <div className="card shadow-sm rounded-4 pt-2">
+                  <img
+                    src="reshot-illustration-scooter-package-delivery.png"
+                    alt="food"
+                    className="bd-placeholder-img card-img-top rounded-top-4"
+                    width={"100%"}
+                    height={"225"}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Safe and fast delivery</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card shadow-sm rounded-4 pt-2">
+                  <img
+                    src="foods.jpg"
+                    alt="food"
+                    className="bd-placeholder-img card-img-top"
+                    width={"100%"}
+                    height={"225"}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Lots of interesting menus</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card shadow-sm rounded-4 pt-2">
+                  <img
+                    src="reshot-icon-price-tag.svg"
+                    alt="food"
+                    className="bd-placeholder-img card-img-top rounded-top-4"
+                    width={"100%"}
+                    height={"225"}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">Affordable price</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

@@ -8,6 +8,9 @@
 .header-container {
     width: fit-content;
 }
+.button-category-style {
+  border: 0;
+}
 @media (max-width: 576px) {
   .text-position {
     margin-top: 50%;

@@ -11,12 +11,13 @@ const Menus = () => {
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [nextPage, setNextPage] = useState(1);
+  const [categ, setCateg] = useState("");
   const navigate = useNavigate();
 
   const getData = () => {
     axios
       .get(
-        `https://api.mudoapi.tech/menus?perPage=6&page=${currentPage}&name=${search}`
+        `https://api.mudoapi.tech/menus?perPage=6&page=${currentPage}&name=${search}&type=${categ}`
       )
       .then((res) => {
         setMenus(res?.data?.data?.Data);
@@ -34,6 +35,18 @@ const Menus = () => {
 
   const handleChanceSearch = (e) => {
     setSearch(e.target.value);
+  };
+
+  const handleChangeBeverage = () => {
+    setCateg("beverage");
+  };
+
+  const handleChangeMainDish = () => {
+    setCateg("main-dish");
+  };
+
+  const handleChangeAllCateg = () => {
+    setCateg("");
   };
 
   const handleDelete = (id) => {
@@ -58,7 +71,7 @@ const Menus = () => {
 
   useEffect(() => {
     getData();
-  }, [search, currentPage]);
+  }, [search, currentPage, categ]);
 
   return (
     <>
@@ -70,8 +83,11 @@ const Menus = () => {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         nextPage={nextPage}
+        handleChangeBeverage={handleChangeBeverage}
+        handleChangeMainDish={handleChangeMainDish}
+        handleChangeAllCateg={handleChangeAllCateg}
       />
-      <Footer/>
+      <Footer />
     </>
   );
 };

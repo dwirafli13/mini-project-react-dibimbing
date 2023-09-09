@@ -42,7 +42,7 @@ const Header = ({ handleChanceSearch, getData }) => {
                 </Link>
               </li>
             </ul>
-            <div className="d-flex">
+            <div className="d-flex me-2">
               <input
                 className="form-control"
                 type="search"
@@ -50,7 +50,9 @@ const Header = ({ handleChanceSearch, getData }) => {
                 onChange={handleChanceSearch}
                 role="search"
               />
-              <button onClick={handleLogout} className="btn btn-danger ms-3">
+            </div>
+            <div className="d-flex">
+              <button onClick={handleLogout} className="btn btn-danger">
                 Logout
               </button>
             </div>

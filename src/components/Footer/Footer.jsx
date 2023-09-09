@@ -23,16 +23,16 @@ const Footer = () => {
             <li className="ms-3">
               <a
                 className="text-body-secondary"
-                href="https://twitter.com/DibimbingId"
+                href="https://github.com/dwirafli13"
                 target="_blank"
               >
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-github"></i>
               </a>
             </li>
             <li className="ms-3">
               <a
                 className="text-body-secondary"
-                href="https://www.instagram.com/dibimbing.id/"
+                href="https://www.instagram.com/dwi_rf/"
                 target="_blank"
               >
                 <i class="bi bi-instagram"></i>
@@ -41,10 +41,10 @@ const Footer = () => {
             <li className="ms-3">
               <a
                 className="text-body-secondary"
-                href="https://www.facebook.com/dibimbing.id/"
+                href="https://www.linkedin.com/in/dwimuhammadnurafli/"
                 target="_blank"
               >
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
               </a>
             </li>
           </ul>
