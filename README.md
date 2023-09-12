@@ -7,7 +7,7 @@
 
 <p>I have successfully created a website that meets all the requirements. Among others :</p>
 <ol> 
-  <li>Using API from [MUDO](https://mudoapi.tech/)</li>
+  <li>Using API from <a href="https://mudoapi.tech/">MUDO</a></li>
   <li>
     The website that will be created must meet the following requirements :
     <ul>
