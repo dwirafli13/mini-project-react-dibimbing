@@ -33,8 +33,7 @@ const Body = ({
         </div>
       </div>
       <div className="text-center mb-3">
-        <h1>Order Here</h1>
-        <p>Chose your favorite food</p>
+        <h1>Choose Category</h1>
       </div>
       <div className="container d-flex justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-between justify-content-between">
         <div>

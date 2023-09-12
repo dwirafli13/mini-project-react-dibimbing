@@ -13,9 +13,9 @@ const Header = ({ handleChanceSearch, getData }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-sm sticky-top bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div className="container-fluid">
-          <Link to={"/menus"} className="navbar-brand fw-bold">
+          <Link to={"/menus"} className="navbar-brand fw-bold mb-2">
             <img src={logo} width={"50"} height={"50"} />
             FoodFever
           </Link>
@@ -30,19 +30,22 @@ const Header = ({ handleChanceSearch, getData }) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarsExample03">
-            <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+          <div
+            className="collapse navbar-collapse d-lg-flex"
+            id="navbarsExample03"
+          >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 col-lg-1">
               <li className="nav-item">
                 <Link
                   to={"/menus"}
-                  className="nav-link fw-bold"
+                  className="nav-link fw-bold mb-2"
                   aria-current="page"
                 >
                   Home
                 </Link>
               </li>
             </ul>
-            <div className="d-flex me-2">
+            <div className="justify-content-lg-center me-2 mb-2 col-lg-6">
               <input
                 className="form-control"
                 type="search"
@@ -51,8 +54,11 @@ const Header = ({ handleChanceSearch, getData }) => {
                 role="search"
               />
             </div>
-            <div className="d-flex">
-              <button onClick={handleLogout} className="btn btn-danger">
+            <button className="btn btn-outline-primary rounded-5 me-2 mb-2">
+              <i class="bi bi-cart-fill"></i>
+            </button>
+            <div className="d-lg-flex col-sm-2 justify-content-lg-end">
+              <button onClick={handleLogout} className="btn btn-danger mb-2">
                 Logout
               </button>
             </div>
