@@ -29,18 +29,31 @@ const DetailMenu = () => {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container mt-4">
         <div className="card mb-3">
-          <img src={menu.imageUrl} className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">{menu.name}</h5>
-            <p className="card-title">{menu.description}</p>
-            <p className="card-title">{menu.priceFormatted}</p>
-            <p className="card-title">{menu.type}</p>
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img
+                src={menu.imageUrl}
+                className="img-fluid rounded-start"
+                width={"100%"}
+                height={"225"}
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">{menu.name}</h5>
+                <p className="card-text">{menu.description}</p>
+                <p className="card-text">Price : {menu.priceFormatted}</p>
+                <p className="card-text">
+                  <small className="text-body-secondary">{menu.type}</small>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

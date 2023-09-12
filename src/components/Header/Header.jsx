@@ -13,7 +13,7 @@ const Header = ({ handleChanceSearch, getData }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg sticky-top bg-body-secondary">
         <div className="container-fluid">
           <Link to={"/menus"} className="navbar-brand fw-bold mb-2">
             <img src={logo} width={"50"} height={"50"} />
@@ -54,9 +54,6 @@ const Header = ({ handleChanceSearch, getData }) => {
                 role="search"
               />
             </div>
-            <button className="btn btn-outline-primary rounded-5 me-2 mb-2">
-              <i class="bi bi-cart-fill"></i>
-            </button>
             <div className="d-lg-flex col-sm-2 justify-content-lg-end">
               <button onClick={handleLogout} className="btn btn-danger mb-2">
                 Logout
