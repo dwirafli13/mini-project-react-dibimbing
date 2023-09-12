@@ -5,17 +5,30 @@
 
 <h2>Requirements</h2>
 
+<p>I have successfully created a website that meets all the requirements. Among others :</p>
 <ol> 
   <li>Using API from [MUDO}(https://mudoapi.tech/)</li>
   <li>
-    At least use some API end points as follows :
+    The website that will be created must meet the following requirements :
     <ul>
-      <li>Register - Successful</li>
-      <li>Register - Unsuccessful</li>
-      <li>Login - Successful</li>
-      <li>Login - Unsuccessful</li>
-      <li>List Menu</li>
-      <li>Detail Menu</li>
+      <li>User Can Register</li>
+      <li>User Can Login</li>
+      <li>Users can see all the menu lists on the website</li>
+      <li>Users can see the page details of each menul</li>
     </ul>
   </li>
+  <li>There is <i>Pagination</i> on the Home Page</li>
+  <li>The website has implemented <i>Protected Routes</i>. Which means users cannot enter the home page before logging in</li>
+  <li>The website has implemented a <i>Responsive Website</i>. Which means that the display of the website can fit on different device sizes.</li>
 </ol>
+
+<h2>Additional Features</h2>
+
+<p>In addition to creating a website by paying attention to existing requirements. I also added some additional features. Among others:</p>
+<ol>
+  <li>Users can delete items from the menu</li>
+  <li>Users can search for food by name</li>
+  <li>Users can filter the menu that appears on the page according to the type of food (Main Dish, Beverage)</li>
+</ol>
+
+<p></p>
